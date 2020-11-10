@@ -126,7 +126,7 @@ function sendSetu(context, replyFunc, logger, bot) {
         replyFunc(context, base64 ? CQcode.img64(base64, imgType) : CQcode.img(url, imgType))
           .then(r => {
             const message_id = r && r.data && r.data.message_id;
-            if (delTime > 0 && message_id)
+            if (delTime > 0 && message_id && r18 == 1)
               setTimeout(() => {
                 bot('delete_msg', { message_id });
               }, delTime * 1000);
