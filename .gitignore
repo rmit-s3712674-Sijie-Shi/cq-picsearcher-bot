@@ -1,8 +1,7 @@
 # Myself
-/config.json
 /test
 /data/*
-
+/go-cqhttp.exe
 # Logs
 logs
 *.log
