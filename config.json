@@ -41,22 +41,22 @@
       "commonProb": 0.2
     },
     "setu": {
-      "enable": false,
-      "apikey": "",
+      "enable": true,
+      "apikey": "282000965faba1712d7587",
       "antiShielding": 0,
       "allowPM": true,
-      "pximgServerPort": 60233,
+      "pximgServerPort": 6023,
       "usePximgAddr": "",
       "pximgProxy": "",
       "size1200": false,
-      "deleteTime": 60,
+      "deleteTime": 30,
       "cd": 600,
       "limit": 30,
       "whiteGroup": [],
       "whiteOnly": false,
       "whiteCd": 0,
       "whiteDeleteTime": 0,
-      "r18OnlyInWhite": true
+      "r18OnlyInWhite": false
     },
     "regs": {
       "searchModeOn": "^竹竹搜[图圖]$",
@@ -82,7 +82,7 @@
       "use": "ocr.space",
       "ocr.space": {
         "defaultLANG": "eng",
-        "apikey": ""
+        "apikey": "4ffe9f0b2e88957"
       },
       "baidubce": {
         "useApi": "accurate_basic",
@@ -97,7 +97,7 @@
       }
     },
     "akhr": {
-      "enable": false,
+      "enable": true,
       "ocr": "ocr.space"
     },
     "reminder": {
