@@ -10,6 +10,7 @@ import PSCache from './src/cache';
 import Logger from './src/Logger';
 import RandomSeed from 'random-seed';
 import sendSetu from './src/plugin/setu';
+import sendGonghuizhan from './src/plugin/gonghuizhan';
 import Akhr from './src/plugin/akhr';
 import _ from 'lodash';
 import minimist from 'minimist';
@@ -172,6 +173,11 @@ function commonHandle(e, context) {
   // reminder
   if (global.config.bot.reminder.enable) {
     if (rmdHandler(context)) return true;
+  }
+
+  // 公会战作业
+  if (global.config.bot.setu.gonghuizhan){
+    if(sendGonghuizhan(context, replyMsg, logger, bot)) return true
   }
 
   //  反哔哩哔哩小程序
